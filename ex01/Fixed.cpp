@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 23:54:50 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/29 05:32:11 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/29 16:07:01 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,9 +58,4 @@ float	Fixed::toFloat( void ) const {
 
 int		Fixed::toInt( void ) const {
 	return (n >> fractBit);
-}
-
-std::ostream & operator<<(std::ostream & o, Fixed const & fixed) {
-	o << fixed.toFloat();
-	return (o);
 }
