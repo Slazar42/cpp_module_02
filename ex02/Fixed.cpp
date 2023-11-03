@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 23:54:50 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/29 20:36:40 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/31 17:38:27 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,6 +102,11 @@ Fixed	Fixed::operator*(const Fixed &fixed) const {
 }
 
 Fixed	Fixed::operator/(const Fixed &fixed) const {
+	if (fixed.toFloat() == 0)
+	{
+		std::cout << "Error: division by zero\n";
+		return (Fixed(0));
+	}
 	return (Fixed(toFloat() / fixed.toFloat()));
 }
 
