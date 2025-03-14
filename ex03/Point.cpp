@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 20:51:29 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/31 17:14:38 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/03 19:37:04 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,8 @@ Point::~Point() {
 
 Point&  Point::operator=( const Point &p ) {
     if ( this != &p ) {
-        ( Fixed ) x = p.getX();
-        ( Fixed ) y = p.getY();
+       (Fixed) x = p.x;
+       (Fixed) y = p.y;
     }
     return *this;
 }

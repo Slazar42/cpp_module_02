@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 23:54:50 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/31 17:38:27 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/01 10:19:17 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,6 @@ Fixed&	Fixed::operator=(const Fixed &fixed) {
 	n = fixed.n;
 	return (*this);
 }
-
 int	Fixed::getRawBits(void) const {
 	std::cout << "getRawBits member function called\n";
 	return (n);

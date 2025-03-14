@@ -1,4 +1,4 @@
-NAME = a.out
+NAME = triangle
 SRC = Fixed.cpp main.cpp bsp.cpp Point.cpp 
 RM = rm -f
 CC = c++

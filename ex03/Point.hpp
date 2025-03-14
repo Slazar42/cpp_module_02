@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 20:50:27 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/31 15:36:08 by slazar           ###   ########.fr       */
+/*   Updated: 2023/11/03 19:34:14 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,9 @@ class Point{
 		Point&	operator= (const Point &point);
 		Fixed	getX(void) const;
 		Fixed	getY(void) const;
-		friend	std::ostream&	operator<<(std::ostream& os, const Point& point);
 };
 
+std::ostream&	operator<<(std::ostream& os, const Point& point);
 bool	bsp(Point const a, Point const b, Point const c, Point const point);
+
 #endif

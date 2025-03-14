@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 23:55:06 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/29 20:55:50 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/31 20:55:33 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ class Fixed{
 		void	setRawBits(int const r);
 		float	toFloat( void ) const;
 		int		toInt( void ) const;
-		friend	std::ostream & operator<<(std::ostream & o, Fixed const & fixed);
 		bool	operator>(const Fixed &fixed) const;
 		bool	operator<(const Fixed &fixed) const;
 		bool	operator>=(const Fixed &fixed) const;
@@ -52,4 +51,5 @@ class Fixed{
 		static const Fixed&	max(const Fixed &a, const Fixed &b);
 };
 
+std::ostream&	operator<<(std::ostream & o, Fixed const & fixed);
 #endif

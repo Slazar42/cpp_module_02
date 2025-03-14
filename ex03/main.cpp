@@ -6,7 +6,7 @@
 /*   By: slazar <slazar@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 23:56:07 by slazar            #+#    #+#             */
-/*   Updated: 2023/10/31 18:46:37 by slazar           ###   ########.fr       */
+/*   Updated: 2023/10/31 20:51:47 by slazar           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 int	main(void)
 {
-	Point a(0, 2.5f);
-	Point b(3.13f, -1);
-	Point c(-1, -3);
-	Point point(0.5f, 0.5f);
+	Point a(0, 0);
+	Point b(3, 0);
+	Point c(0,3);
+	
+	Point point(1, 1);
 
 	std::cout << "a = " << a << std::endl;
 	std::cout << "b = " << b << std::endl;
